@@ -1,3 +1,3 @@
-/Users/toor/CLionProjects/LongestCommonSubstring/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/toor/CLionProjects/LongestCommonSubstring/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/toor/CLionProjects/LongestCommonSubstring/cmake-build-debug/CMakeFiles/LongestCommonSubstring.dir
+/Users/toor/Github/CSE 5311/Longest Common Substring/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/toor/Github/CSE 5311/Longest Common Substring/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/toor/Github/CSE 5311/Longest Common Substring/cmake-build-debug/CMakeFiles/LongestCommonSubstring.dir

@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/toor/CLionProjects/LongestCommonSubstring/main.cpp" "/Users/toor/CLionProjects/LongestCommonSubstring/cmake-build-debug/CMakeFiles/LongestCommonSubstring.dir/main.cpp.o"
+  "/Users/toor/Github/CSE 5311/Longest Common Substring/main.cpp" "/Users/toor/Github/CSE 5311/Longest Common Substring/cmake-build-debug/CMakeFiles/LongestCommonSubstring.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

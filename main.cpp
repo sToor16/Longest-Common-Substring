@@ -117,9 +117,6 @@ int main()
     int endPos;
     int min = 0;
 
-    //std::cout << "dollarPos: " << dollarPos << std::endl;
-    //std::cout << "ampPos: " << ampPos << std::endl;
-
     for (i=3;i<n;i++) {
 
             if (sa[i]<dollarPos)
@@ -147,39 +144,27 @@ int main()
 
             if(checkArray[0] == 1 && checkArray[1] == 1 && checkArray[2] == 1)
             {
-                //std::cout << "startPos: " << startPos << std::endl;
-                //std::cout << "endPos : " << i << std::endl;
-                //std::cout << "n: " << i << std::endl;
-                //std::cout << "n-1: " << i-1 << std::endl;
-                //std::cout << "i-1 String number: " << sa[i-1] << std::endl;
-                //std::cout << "i String number: " << sa[i] << std::endl;
 
                 checkArray[0] = checkArray[1] = checkArray [2] = 0;
 
                 if (sa[i-1]<dollarPos) {
-                    //std::cout << "resetting first interval for i-1 " <<std::endl;
                     checkArray[0] = 1;
                 }
                 if (sa[i-1] < ampPos && sa[i] > dollarPos) {
-                    //std::cout << "resetting second interval for i-1 " <<std::endl;
                     checkArray[1] = 1;
                 }
                 if (sa[i-1] > ampPos){
-                    //std::cout << "resetting third interval for i-1 " <<std::endl;
                     checkArray[2] = 1;
                 }
 
                 if (sa[i]<dollarPos) {
                     checkArray[0] = 1;
-                    //std::cout << "resetting first interval for i " <<std::endl;
                 }
                 if (sa[i] < ampPos && sa[i] > dollarPos) {
                     checkArray[1] = 1;
-                    //std::cout << "resetting second interval for i " <<std::endl;
                 }
                 if (sa[i] > ampPos){
                     checkArray[2] = 1;
-                    //std::cout << "resetting first interval for i " <<std::endl;
                 }
 
                 int tempMin = std::min (lcp[i-1],lcp[i]);
@@ -191,22 +176,12 @@ int main()
                     tempEnd = i;
                 }
 
-                /*if (std::min (lcp[i-1],lcp[i]) > min) {
-                    min = std::min (lcp[i-1],lcp[i]);
-                }*/
-                //std::cout << "tempMin: " << tempMin << std::endl;
-
                 startPos = i-1;
         }
     }
-    /*std::cout << "min: " << min << std::endl;
-    std::cout << "tempStart: " << tempStart << std::endl;
-    std::cout << "tempEnd: " << tempEnd << std::endl;*/
 
     int x;
-    //std::cout << "dollarPos:" << dollarPos << std::endl;
     for (x=tempStart;x<=tempEnd;x++) {
-        //std::cout << "sa[x]: at position " << sa[x] <<  std::endl;
         if (sa[x] < dollarPos ) {
             firstPos = x;
         }
@@ -227,9 +202,6 @@ int main()
     if (secondPos > thirdPos)
         std::swap(secondPos, thirdPos);
 
-//    std::cout << "firstPos: " << firstPos << std::endl;
-//    std::cout << "secondPos: " << secondPos << std::endl;
-//    std::cout << "thirdPos: " << thirdPos << std::endl;
 
     printf("Length of longest common substring is %d\n",min);
     printf("x at %d, y at %d, z at %d\n",firstPos, secondPos, thirdPos);

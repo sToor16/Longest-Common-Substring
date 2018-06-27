@@ -54,10 +54,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/toor/CLionProjects/LongestCommonSubstring
+CMAKE_SOURCE_DIR = "/Users/toor/Github/CSE 5311/Longest Common Substring"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/toor/CLionProjects/LongestCommonSubstring/cmake-build-debug
+CMAKE_BINARY_DIR = "/Users/toor/Github/CSE 5311/Longest Common Substring/cmake-build-debug"
 
 #=============================================================================
 # Target rules for target CMakeFiles/LongestCommonSubstring.dir
@@ -66,7 +66,7 @@ CMAKE_BINARY_DIR = /Users/toor/CLionProjects/LongestCommonSubstring/cmake-build-
 CMakeFiles/LongestCommonSubstring.dir/all:
 	$(MAKE) -f CMakeFiles/LongestCommonSubstring.dir/build.make CMakeFiles/LongestCommonSubstring.dir/depend
 	$(MAKE) -f CMakeFiles/LongestCommonSubstring.dir/build.make CMakeFiles/LongestCommonSubstring.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/toor/CLionProjects/LongestCommonSubstring/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target LongestCommonSubstring"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/toor/Github/CSE 5311/Longest Common Substring/cmake-build-debug/CMakeFiles" --progress-num=1,2 "Built target LongestCommonSubstring"
 .PHONY : CMakeFiles/LongestCommonSubstring.dir/all
 
 # Include target in all.
@@ -76,9 +76,9 @@ all: CMakeFiles/LongestCommonSubstring.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/LongestCommonSubstring.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/toor/CLionProjects/LongestCommonSubstring/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/toor/Github/CSE 5311/Longest Common Substring/cmake-build-debug/CMakeFiles" 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/LongestCommonSubstring.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/toor/CLionProjects/LongestCommonSubstring/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/toor/Github/CSE 5311/Longest Common Substring/cmake-build-debug/CMakeFiles" 0
 .PHONY : CMakeFiles/LongestCommonSubstring.dir/rule
 
 # Convenience name for target.
